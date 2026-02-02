@@ -1120,7 +1120,7 @@ section .container {
   margin-bottom: 0;
   width: 33%;
   padding: 1%;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
 }
 
 #portfolio .portfolio-item h4 {
@@ -1352,66 +1352,53 @@ section .container {
 /* --- The Grid Layout --- */
 .contact .contact-grid {
   display: grid;
-  /* FORCE 2 COLUMNS: 1fr 1fr means "two equal fractions" */
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  /* Space between boxes */
   width: 100%;
-}
-
-/* --- Mobile Responsiveness --- */
-@media (max-width: 768px) {
-  .contact .contact-grid {
-    /* Switch to 1 column on mobile */
-    grid-template-columns: 1fr;
-  }
 }
 
 /* --- Info Box Styling --- */
 .contact .info-box {
   display: flex;
-  align-items: flex-start;
-  /* Aligns icon and text to top */
+  align-items: flex-start; /* Default Desktop: Align top-left */
   padding: 30px;
   background: #222;
-  /* Fallback color */
   background: var(--clr-bg-card, #222);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   height: 100%;
-  /* Ensures box stretches to match neighbor's height */
   width: 100%;
   transition: all 0.3s ease;
 }
 
 .contact .info-box:hover {
   border-color: #ffde9e;
-  /* Gold accent */
   transform: translateY(-5px);
 }
 
 /* --- Icon Styling --- */
-.contact .info-box i {
+.contact .info-box > i {
   font-size: 32px;
   color: #ffde9e;
-  /* Gold color */
   background: rgba(255, 222, 158, 0.1);
-  /* Gold glow */
   width: 56px;
   height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin-right: 20px;
-  flex-shrink: 0;
-  /* Prevents icon from squishing */
+  /* Desktop Margin: Right side */
+  margin-right: 20px; 
+  /* Critical: Prevents icon from squishing into an oval */
+  flex-shrink: 0; 
 }
 
 /* --- Content Styling --- */
 .contact .info-box .content {
   flex: 1;
-  /* Takes remaining space */
+  /* Fix: Ensures content takes available width */
+  width: 100%; 
+  min-width: 0;
 }
 
 .contact .info-box h3 {
@@ -1426,12 +1413,15 @@ section .container {
   line-height: 1.6;
   color: #fff;
   font-size: 15px;
+  /* Fix: Forces long emails/addresses to wrap neatly */
+  word-break: break-word; 
 }
 
 /* --- Social Links Styling --- */
 .contact .social-links {
   display: flex;
   gap: 15px;
+  flex-wrap: wrap; 
 }
 
 .contact .social-links a {
@@ -1448,7 +1438,6 @@ section .container {
 }
 
 .contact .social-links a i {
-  /* Reset icon styles inside the social buttons */
   margin: 0;
   width: auto;
   height: auto;
@@ -1460,6 +1449,40 @@ section .container {
 .contact .social-links a:hover {
   background: #ffde9e;
   color: #000;
+}
+
+/* --- MOBILE RESPONSIVENESS (The Strict Fix) --- */
+@media (max-width: 768px) {
+  .contact .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact .info-box {
+    /* 1. Stack Vertical */
+    flex-direction: column; 
+    /* 2. Force LEFT Alignment */
+    align-items: center; 
+    text-align: center;
+    padding: 25px;
+  }
+
+  /* Reset the Icon Margins for Vertical Stack */
+  .contact .info-box > i {
+    margin-right: 0; 
+    margin-bottom: 20px; /* Space between Icon and Text */
+  }
+
+  /* Ensure Content fills the width so it aligns left properly */
+  .contact .info-box .content {
+    width: 100%;
+    padding-left: 0; /* Remove any accidental padding */
+  }
+
+  /* Force Social Links to align Left */
+  .contact .social-links {
+    justify-content: flex-start;
+  }
 }
 
 /*--------------------------------------------------------------
