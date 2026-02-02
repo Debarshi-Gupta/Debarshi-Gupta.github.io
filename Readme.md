@@ -1,77 +1,102 @@
-# Personal Portfolio 🔥
-> https://rajaprerak.github.io/
+# Debarshi Gupta - Personal Portfolio 🚀
 
-:star: Star me on GitHub — it helps!
+> [https://debarshi-gupta.github.io/](https://debarshi-gupta.github.io/)
 
-[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/rajaprerak/rajaprerak.github.io/commits/master)
-[![Website shields.io](https://img.shields.io/badge/website-up-yellow)](http://rajaprerak.github.io/)
-[![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/rajaprerak/)
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
+[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/Debarshi-Gupta/Debarshi-Gupta.github.io/commits/master)
+[![Website](https://img.shields.io/badge/website-up-yellow)](https://debarshi-gupta.github.io/)
+[![License](https://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-### Website Preview
-#### Home Page
-<img src="website_images/HomePage.gif" width="900">
+## 👋 About
 
+Welcome to my personal portfolio website! This site showcases my professional journey, skills, projects, and achievements. Built with modern web technologies and designed to provide a seamless user experience.
 
-#### About Page
-<img src="website_images/AboutPage.png" width="900">
+## ✨ Features
 
+- 🎨 **Fully Responsive** - Works seamlessly on all devices
+- ✅ **Valid HTML5 & CSS3** - Clean, semantic markup
+- ⌨️ **Typing Animation** - Dynamic text effects using `Typed.js`
+- 🎯 **Easy to Navigate** - Intuitive user interface
+- 🚀 **Fast Loading** - Optimized for performance
 
-#### Projects Page
-<img src="website_images/ProjectPage.png" width="900">
-  
+## 📚 Sections
 
+| Section | Description |
+|---------|-------------|
+| **About** | Introduction and personal background |
+| **Interests** | Areas of passion and expertise |
+| **Education** | Academic qualifications |
+| **Certifications** | Professional certifications and courses |
+| **Experience** | Work history and achievements |
+| **Projects** | Showcase of personal and professional projects |
+| **Skills** | Technical skills and competencies |
+| **Resume** | Downloadable resume |
+| **Contact** | Get in touch |
 
-:star: Star me on GitHub — it helps!
+## 🗂️ Project Structure
 
-## Features 📋
-⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
-⚡️ Typing animation using `Typed.js`\
-⚡️ Easy to modify
+```
+Debarshi-Gupta.github.io/
+├── index.html              # Main portfolio page
+├── favicon.png             # Site favicon
+├── LICENSE                 # MIT License
+├── Readme.md               # This file
+├── assets/
+│   ├── css/
+│   │   └── style.css       # Stylesheet
+│   ├── img/
+│   │   ├── debarshi.png    # Profile image
+│   │   ├── background/     # Background images
+│   │   ├── certification/  # Certification logos
+│   │   ├── education/      # Education logos
+│   │   ├── project/        # Project screenshots
+│   │   └── skills/         # Skills icons
+│   └── js/
+│       └── main.js         # JavaScript functionality
+└── projects/               # Individual project pages
+    ├── bookmarksexportertool.html
+    ├── moviebookingapplication.html
+    ├── patientappointmentsystem.html
+    ├── resumesectionclassifier.html
+    └── schooladminsystem.html
+```
 
-## Installation & Deployment 📦
-- Clone the repository and modify the content of <b>index.html</b> 
-- Add or remove images from `assets/img/` directory as per your requirement.
-- Update the info of `projects` folder according to your need
-- Use [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to create your own website.
-- To deploy your website, first you need to create github repository with name `<your-github-username>.github.io` and push the generated code to the `master` branch.
+## 🛠️ Technologies Used
 
-## Sections 📚
-✔️ About\
-✔️ Interests\
-✔️ Education\
-✔️ Online Certification\
-✔️ Experience\
-✔️ Projects \
-✔️ Skills \
-✔️ Resume\
-✔️ Contact Info
+- **HTML5** - Markup language
+- **CSS3** - Styling and animations
+- **JavaScript** - Interactivity
+- **Typed.js** - Typing animation library
+- **GitHub Pages** - Hosting
 
+## 🚀 Getting Started
 
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Debarshi-Gupta/Debarshi-Gupta.github.io.git
+   ```
 
-## Tools Used 🛠️
-* <b>GitHub Pages</b> - To host my static website (HTML, CSS, JS).
+2. **Navigate to the project**
+   ```bash
+   cd Debarshi-Gupta.github.io
+   ```
 
-## Contributing 💡
-#### Step 1
+3. **Open in browser**
+   ```bash
+   open index.html
+   ```
 
-- **Option 1**
-    - 🍴 Fork this repo!
+## 📝 License
 
-- **Option 2**
-    - 👯 Clone this repo to your local machine.
+[![License](https://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
+This project is licensed under the **[MIT License](http://opensource.org/licenses/mit-license.php)**.
 
-#### Step 2
+## 🔗 Connect
 
-- **Build your code** 🔨🔨🔨
+[![GitHub](https://img.shields.io/badge/GitHub-Debarshi--Gupta-181717?style=for-the-badge&logo=github)](https://github.com/Debarshi-Gupta)
 
-#### Step 3
+---
 
-- 🔃 Create a new pull request.
-
-## License
-[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-
-- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+<p align="center">
+  Made with ❤️ by <strong>Debarshi Gupta</strong>
+</p>
