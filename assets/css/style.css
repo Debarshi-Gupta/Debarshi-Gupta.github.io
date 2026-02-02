@@ -1107,20 +1107,25 @@ section .container {
   color: #000;
 }
 
-/* --- Container Grid (Mobile First default) --- */
+/* --- Container Grid --- */
 #portfolio .portfolio-container {
-  display: grid;
-  /* Default: 1 column on mobile, fits more if space allows */
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* FORCE GRID LAYOUT */
+  display: grid !important;
+  /* Default to 3 Columns (Desktop Standard) */
+  grid-template-columns: repeat(3, 1fr) !important;
   gap: 30px;
+  width: 100%;
+  height: auto !important; /* Override JS height calculations */
 }
 
 /* --- Project Item --- */
 #portfolio .portfolio-item {
   margin-bottom: 0;
-  width: 33%;
-  padding: 1%;
-  padding-bottom: 5%;
+  width: auto !important; /* Stop Bootstrap/JS from setting widths */
+  
+  /* CRITICAL: Overrides Isotope/JS positioning to fix the layout */
+  position: static !important; 
+  transform: none !important;
 }
 
 #portfolio .portfolio-item h4 {
@@ -1129,28 +1134,36 @@ section .container {
   color: #fff;
   margin-bottom: 15px;
   text-align: center;
+  
+  /* ALIGNMENT FIX: Ensures all titles align perfectly */
+  min-height: 85px; 
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 /* --- Image Wrapper --- */
 #portfolio .portfolio-wrap {
   position: relative;
-  /* Allows overlay to sit inside */
   border-radius: 8px;
   overflow: hidden;
   z-index: 1;
+  width: 100%;
 }
 
+/* --- Image Styling (Fixes Distortion) --- */
 #portfolio .portfolio-wrap img {
-  width: 100%;
-  height: 250px;
-  /* Fixed height for consistency */
-  object-fit: cover;
-  /* Ensures image covers the area nicely */
+  width: 100% !important;
+  height: 250px !important; /* Consistent height */
+  
+  /* FIX: Crops the image so it doesn't look stretched/squashed */
+  object-fit: cover !important; 
+  
   transition: 0.3s;
   display: block;
 }
 
-/* --- Overlay (Hidden Default) --- */
+/* --- Overlay --- */
 #portfolio .portfolio-info {
   position: absolute;
   top: 0;
@@ -1159,16 +1172,13 @@ section .container {
   bottom: 0;
   background: rgba(0, 0, 0, 0.7);
   z-index: 2;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   opacity: 0;
   transition: all 0.3s;
 }
 
-/* --- Hover Effects --- */
 #portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
@@ -1200,11 +1210,11 @@ section .container {
   color: #000;
 }
 
-/* --- DESKTOP LAYOUT FIX --- */
-/* Forces exactly 3 columns on screens wider than 992px */
-@media (min-width: 13%) {
+/* --- MOBILE RESPONSIVENESS --- */
+/* Switch to 1 Column only on screens smaller than 992px */
+@media (max-width: 991px) {
   #portfolio .portfolio-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr !important;
   }
 }
 
