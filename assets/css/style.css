@@ -988,7 +988,7 @@ section .container {
 }
 
 #education .portfolio-links a:hover {
-  background: #ffde9e;
+  background: #D4AF37;
   color: #000;
 }
 
@@ -1098,13 +1098,15 @@ section .container {
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s;
+  font-weight: bold;
 }
 
 #portfolio-flters li:hover,
 #portfolio-flters li.filter-active {
-  background: #ffde9e;
-  border-color: #ffde9e;
+  background: #D4AF37;
+  border-color: #D4AF37;
   color: #000;
+  font-weight: bold;
 }
 
 /* --- Container Grid --- */
@@ -1206,7 +1208,7 @@ section .container {
 }
 
 #portfolio .portfolio-links a:hover {
-  background: #ffde9e;
+  background: #D4AF37;
   color: #000;
 }
 
@@ -1382,14 +1384,14 @@ section .container {
 }
 
 .contact .info-box:hover {
-  border-color: #ffde9e;
+  border-color: #D4AF37;
   transform: translateY(-5px);
 }
 
 /* --- Icon Styling --- */
 .contact .info-box > i {
   font-size: 32px;
-  color: #ffde9e;
+  color: #D4AF37;
   background: rgba(255, 222, 158, 0.1);
   width: 56px;
   height: 56px;
@@ -1415,7 +1417,7 @@ section .container {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 10px 0;
-  color: #ffde9e;
+  color: #D4AF37;
 }
 
 .contact .info-box p {
@@ -1457,7 +1459,7 @@ section .container {
 }
 
 .contact .social-links a:hover {
-  background: #ffde9e;
+  background: #D4AF37;
   color: #000;
 }
 
