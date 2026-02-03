@@ -734,6 +734,10 @@ section .container {
   margin-right: var(--space-xs);
 }
 
+.icofont-rounded-right::before {
+  color: #D4AF37;
+}
+
 /*--------------------------------------------------------------
 # Interests Section
 --------------------------------------------------------------*/
